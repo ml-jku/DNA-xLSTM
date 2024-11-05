@@ -1,0 +1,34 @@
+# Use open-source version of Mamba
+_name_: xlstm_lm
+config:
+  _target_: models.dna_xlstm.modelling_xlstm.xLSTMConfig
+  d_model: 256  # Will be overwritten by CL in the scaling exps
+  n_layer: 4  # Will be overwritten by CL in the scaling exps
+  vocab_size: 12
+  pad_vocab_size_multiple: 8
+  max_length: 1024
+  m_conv1d_kernel_size: 4
+  m_conv1d_causal: True
+  m_qkv_proj_blocksize: 4
+  m_num_heads: 4
+  m_proj_factor: 2.0
+  m_backend: parallel
+  m_chunk_size: 64
+  m_backend_bidirectional: False
+  m_position_embeddings: False
+  m_bias: False
+  s_num_heads: 4
+  s_conv1d_kernel_size: 4
+  s_conv1d_causal: True
+  s_lstm_at: []
+  s_proj_factor: 1.3
+  s_round_proj_up_dim_up: True
+  s_round_proj_up_to_multiple_of: 64
+  s_position_embeddings: False
+  dropout: 0.0
+  bidirectional: False
+  bidirectional_alternating: False
+  rcps: False
+  # Used for RCPSEmbedding / RCPSLMHead (will be filled in during model instantiation using info from tokenizer)
+  complement_map: null
+

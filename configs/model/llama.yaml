@@ -1,0 +1,14 @@
+_name_: llama_lm
+config:
+  _target_: models.llama.modelling_llama.TransformerConfig
+  d_model: 256  # Will be overwritten by CL in the scaling exps
+  n_layer: 4  # Will be overwritten by CL in the scaling exps
+  bidirectional: false
+  max_length: 1024
+  vocab_size: 12
+  n_heads: 16
+  n_kv_heads: 16
+  hidden_dim: null
+  multiple_of: 8  # MLP hidden layer size will be multiple of
+  norm_eps: 1e-5
+  dropout: 0.0  
