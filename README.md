@@ -6,9 +6,9 @@
 
 This repository provides the code necessary to reproduce the experiments presented in the paper [Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences](TODO arxiv link). Experimental results are organized across the following repositories:
 
-- [DNA-xLSTM](TODO link) (current repository) 
-- [Prot-xLSTM](TODO link)
-- [Chem-xLSTM](TODO link)
+- [DNA-xLSTM](https://github.com/ml-jku/DNA-xLSTM/) (current repository) 
+- [Prot-xLSTM](https://github.com/ml-jku/Prot-xLSTM/)
+- [Chem-xLSTM](https://github.com/ml-jku/Chem-xLSTM/)
 
 ## DNA-xLSTM
 
