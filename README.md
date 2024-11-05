@@ -2,7 +2,7 @@
     <img src="assets/BioxLSTM_Overview.png" alt="xlstm"/>
 </p>
 
-# Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences
+# DNA-xLSTM
 
 This repository provides the code necessary to reproduce the experiments presented in the paper [Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences](TODO arxiv link). Experimental results are organized across the following repositories:
 
